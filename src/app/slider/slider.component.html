@@ -1,0 +1,41 @@
+<div class="slider">
+  <ng-container *ngFor="let item of items; let i = index">
+    <div class="slide-abs"></div>
+    <div class="slide" *ngIf="i == currentSlideIndex" @slideFade>
+      <div class="slide-bg">
+        <div class="slide-bg-abs"></div>
+        <img [src]="imageSize.large + item.backdrop_path" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="slide-pane">
+            <h2 class="name">{{ item.title }}</h2>
+            <div class="meta">
+              <div class="info">
+                <span class="rating">
+                  <span><mat-icon class="star-icon">star</mat-icon> </span
+                  ><span class="rating-value"> {{ item.vote_average }}</span
+                  ><span class="overall-rate">/10</span>
+                  <span class="division-bar">|</span>
+                  <span class="review-count"
+                    >{{ item.vote_count }}
+                    <span class="reviews">Reviews</span></span
+                  >
+                  <span class="division-bar">|</span>
+                  <span class="year">{{
+                    item.release_date | date: "yyyy"
+                  }}</span>
+                </span>
+              </div>
+            </div>
+            <div class="description pt-3">
+              <p>
+                {{ item.overview }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

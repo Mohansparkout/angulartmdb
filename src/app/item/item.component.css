@@ -1,0 +1,47 @@
+/* Upcoming Movies List */
+
+.item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.item-image {
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.movie-rating .mat-icon {
+  height: 16px;
+  width: 16px;
+  font-size: 14px;
+  color: #f5c518;
+  margin-right: 5px;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background: #000000;
+  top: 10px;
+  left: 25px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.movie-rating span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.movie-title {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65px;
+}

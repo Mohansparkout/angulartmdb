@@ -1,0 +1,14 @@
+/* footer */
+.main-footer {
+  background: #032541;
+}
+
+.main-footer p {
+  color: #ffffff;
+  margin: unset;
+  font-size: 12px;
+}
+
+.main-footer p a {
+  color: #ffffff;
+}

@@ -1,0 +1,17 @@
+<ng-container *ngIf="itemData">
+  <a class="item-movies">
+    <div class="movie-rating">
+      <mat-icon class="star-icon">star</mat-icon>
+      <span>{{ itemData.vote_average }}</span> <span>/10</span>
+    </div>
+    <div class="item-image">
+      <img
+        [src]="imageSizes.medium + itemData.poster_path"
+        [alt]="itemData.title"
+      />
+    </div>
+    <div class="movie-title">
+      {{ itemData.title }}
+    </div>
+  </a>
+</ng-container>
